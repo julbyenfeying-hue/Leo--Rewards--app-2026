@@ -1,1 +1,76 @@
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Leo Rewards</title>
+<style>
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #101827;
+  color: white;
+  text-align: center;
+}
+header {
+  background: #172b49;
+  padding: 25px;
+}
+h1 { color: #36d399; }
+.card {
+  background: #20324b;
+  margin: 20px;
+  padding: 25px;
+  border-radius: 15px;
+}
+button {
+  background: #20c997;
+  color: #102033;
+  border: none;
+  padding: 14px 25px;
+  margin: 8px;
+  border-radius: 9px;
+  font-size: 16px;
+}
+</style>
+</head>
+<body>
+
+<header>
+<h1>LEO REWARDS</h1>
+<p>Play Games • Collect Points • Have Fun</p>
+</header>
+
+<div class="card">
+<h2>Welcome to Leo Rewards!</h2>
+<p>Your rewards journey starts here.</p>
+</div>
+
+<div class="card">
+<h2>Your Points</h2>
+<h1 id="points">0</h1>
+<button onclick="playGame()">Play Game</button>
+<p id="message">Tap to play!</p>
+</div>
+
+<div class="card">
+<h2>Games</h2>
+<button onclick="alert('Coming soon!')">Lucky Game</button>
+<button onclick="alert('Coming soon!')">Daily Challenge</button>
+</div>
+
+<script>
+let points = 0;
+
+function playGame() {
+  points += 10;
+  document.getElementById("points").innerText = points;
+  document.getElementById("message").innerText =
+    "You earned 10 demo points!";
+}
+</script>
+
+</body>
+  </html>
+
